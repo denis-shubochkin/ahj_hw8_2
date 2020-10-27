@@ -1,0 +1,120 @@
+body {
+  color: #000000;
+  background: linear-gradient( #bbb, transparent 1px), linear-gradient( 90deg, #bbb, transparent 1px);
+  background-size: 15px 15px;
+  background-position: center center;
+}
+
+.enter {
+  width: 250px;
+  height: 80px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 7px;
+  margin-left: 50px;
+  margin-top: 50px;
+  padding: 20px;
+  text-align: center;
+}
+
+.input-name {
+  width: 230px;
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 20px;
+  outline: none;
+}
+
+.enter-button {
+  width: 100px;
+  height: 30px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 7px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+
+
+
+.name-date {
+  font-size: small;
+  margin-bottom: 5px;
+}
+
+.main-widget {
+display: none;
+width: 400px;
+height: 500px;
+background-color: white;
+border: 1px solid black;
+border-radius: 7px;
+margin-top: 5px;
+margin-bottom: 5px;
+margin-left: 300px;
+padding-top: 5px;
+padding-bottom: 5px;
+z-index: 2;
+position: relative;
+}
+
+.chat {
+  overflow-y: auto;
+  height: 90%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.message {
+  margin-bottom: 10px;
+}
+
+.my {
+ text-align: right;
+}
+
+.my .name-date {
+  color: red;
+}
+.input-message {
+  display: block;
+  height: 30px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.users {
+  display: none;
+  width: 300px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 7px;
+  padding-top: 10px;
+  padding-left: 5px;
+  position: absolute;
+  z-index: 0;
+  top: 40px;
+  left: 100px;
+}
+
+.user {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.user-name {
+  padding-top: 7px;
+  padding-left: 10px;
+}
+
+.users .my {
+  color: red;
+}
