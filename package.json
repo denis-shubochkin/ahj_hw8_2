@@ -4,10 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "forever src/js/server.js",
+    "prestart":"npm install",
+    "start": "forever server.js",
     "list": "forever list",
     "stop": "forever stop 0",
-    "watch": "forever -w src/js/server.js",
+    "watch": "forever -w server.js",
     "build": "webpack --mode production",
     "start:dev": "webpack-dev-server --mode development",
     "lint": "eslint .",
@@ -18,6 +19,9 @@
     "show:coverage": "live-server coverage/lcov-report",
     "preshow:dist": "npm run build",
     "show:dist": "live-server dist"
+  },
+  "engines":{
+    "node":"11.x"
   },
   "browser": {
     "child_process": false
